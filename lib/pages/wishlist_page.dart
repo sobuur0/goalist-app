@@ -23,7 +23,7 @@ class _WishlistPageState extends State<WishlistPage> {
       body: SafeArea(
         child: Column(
           children: const <Widget>[
-            wishlistCard(),
+            WishlistCard(),
           ],
         ),
       ),
