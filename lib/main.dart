@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
-import 'package:goalist_app/wishlist_page.dart';
+import 'package:goalist_app/pages/wishlist_page.dart';
 
 void main() {
   runApp(const GoalistApp());
@@ -17,6 +17,9 @@ class GoalistApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           color: kAppBarColor,
         ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: kAppBarColor,
+        )
       ),
       home: const WishlistPage(),
     );
