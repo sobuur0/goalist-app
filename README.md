@@ -1,6 +1,7 @@
-# goalist_app
+# goalist
 
-A new Flutter project.
+An app built with flutter that helps to set goals with different little steps to be
+accomplished and gives a congratulatory message once the steps of a particular goal are achieved.
 
 ## Getting Started
 
