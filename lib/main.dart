@@ -19,6 +19,8 @@ class GoalistApp extends StatelessWidget {
         ),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: kAppBarColor,
+          selectedItemColor: kTextsColor,
+          unselectedItemColor: kUnselectedItemColor,
         )
       ),
       home: const WishlistPage(),

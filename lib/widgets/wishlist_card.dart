@@ -57,7 +57,7 @@ class WishlistCard extends StatelessWidget {
                 SizedBox(width: 15.0,),
                 Icon(
                   Icons.check_circle,
-                  color: Color(0xFF9EBDC0),
+                  color: kUnselectedItemColor,
                 ),
               ],
             ),
