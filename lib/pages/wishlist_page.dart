@@ -12,7 +12,7 @@ class _WishlistPageState extends State<WishlistPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
+      child: ListView(
         children: const <Widget>[
           WishlistCard(
             goal: 'Become a Product designer',
