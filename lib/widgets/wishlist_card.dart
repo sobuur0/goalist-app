@@ -30,7 +30,7 @@ class WishlistCard extends StatelessWidget {
               topRight: Radius.circular(12.0),
             ),
             child: Image.asset(
-              'images/smoke.jpg',
+              'images/clock.jpg',
               fit: BoxFit.fill,
               height: 100,
             ),
