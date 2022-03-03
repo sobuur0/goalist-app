@@ -16,25 +16,28 @@ class WishlistCard extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Container(
-      height: size.height * 0.2,
-      margin: const EdgeInsets.symmetric(
-        horizontal: 10.0,
-        vertical: 20.0,
-      ),
+      margin: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0),
+        borderRadius: BorderRadius.circular(12.0),
         color: kWishlistCardColor,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Image.asset(
-            'images/smoke.jpg',
-            scale: 30,
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(12.0),
+              topRight: Radius.circular(12.0),
+            ),
+            child: Image.asset(
+              'images/smoke.jpg',
+              fit: BoxFit.fill,
+              height: 100,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(
-              vertical: 5.0,
+              vertical: 10.0,
               horizontal: 8.0,
             ),
             child: Row(
