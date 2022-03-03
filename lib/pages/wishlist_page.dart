@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:goalist_app/constants.dart';
 import 'package:goalist_app/widgets/wishlist_card.dart';
 
 class WishlistPage extends StatefulWidget {
@@ -12,34 +11,12 @@ class WishlistPage extends StatefulWidget {
 class _WishlistPageState extends State<WishlistPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'My Wishlist',
-          style: kHeaderTextStyle,
-        ),
-        centerTitle: true,
-      ),
-      body: SafeArea(
-        child: Column(
-          children: const <Widget>[
-            WishlistCard(),
-          ],
-        ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: 'Add',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.done_outline),
-            label: 'Completed',
+    return SafeArea(
+      child: Column(
+        children: const <Widget>[
+          WishlistCard(
+            goal: 'Become a Product designer',
+            duration: 3,
           ),
         ],
       ),

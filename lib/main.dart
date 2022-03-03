@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
-import 'package:goalist_app/pages/wishlist_page.dart';
+import 'package:goalist_app/pages/home_page.dart';
 
 void main() {
   runApp(const GoalistApp());
@@ -23,7 +23,7 @@ class GoalistApp extends StatelessWidget {
           unselectedItemColor: kUnselectedItemColor,
         )
       ),
-      home: const WishlistPage(),
+      home: const HomePage(),
     );
   }
 }

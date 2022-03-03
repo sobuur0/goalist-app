@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
 
 class WishlistCard extends StatelessWidget {
+  final String goal;
+  final int duration;
+
   const WishlistCard({
     Key? key,
+    required this.goal,
+    required this.duration,
   }) : super(key: key);
 
   @override
@@ -34,28 +39,30 @@ class WishlistCard extends StatelessWidget {
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const <Widget>[
+              children: <Widget>[
                 Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
-                        text: 'Become a Product Designer\n',
+                        text: '$goal\n',
                         style: kGoalTextStyle,
                       ),
                       TextSpan(
-                        text: 'in 3 years',
+                        text: 'in $duration years',
                         style: kDurationTextStyle,
                       ),
                     ],
                   ),
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.share,
                   color: kTextsColor,
                 ),
-                SizedBox(width: 15.0,),
-                Icon(
+                const SizedBox(
+                  width: 15.0,
+                ),
+                const Icon(
                   Icons.check_circle,
                   color: kUnselectedItemColor,
                 ),
