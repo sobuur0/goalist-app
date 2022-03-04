@@ -12,6 +12,7 @@ class _AddPageState extends State<AddPage> {
   Widget build(BuildContext context) {
     return const Text(
       'ADD PAGE',
+      style: kHeaderTextStyle
     );
   }
 }
