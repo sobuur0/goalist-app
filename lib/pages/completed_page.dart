@@ -75,7 +75,7 @@ class _CompletedPageState extends State<CompletedPage> {
                       ],
                     ),
                     const Icon(
-                      Icons.woman,
+                      Icons.house,
                       size: 60.0,
                     ),
                   ],
@@ -116,3 +116,5 @@ class _CompletedPageState extends State<CompletedPage> {
     );
   }
 }
+
+//TODO: get and change the icons to a trophy icon
