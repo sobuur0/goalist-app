@@ -20,6 +20,12 @@ class _HomePageState extends State<HomePage> {
     const CompletedPage(),
   ];
 
+  static final List<String> _appBarText = <String>[
+    'My Wishlist',
+    'Add New Goal',
+    'Accomplished Goals',
+  ];
+
   void onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -30,8 +36,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'My Wishlist',
+        title: Text(
+          _appBarText.elementAt(_selectedIndex),
           style: kHeaderTextStyle,
         ),
         centerTitle: true,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:goalist_app/constants.dart';
 
 class CompletedPage extends StatefulWidget {
   const CompletedPage({Key? key}) : super(key: key);
@@ -10,8 +11,10 @@ class CompletedPage extends StatefulWidget {
 class _CompletedPageState extends State<CompletedPage> {
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'COMPLETED PAGE',
+    return SafeArea(
+      child: Scaffold(
+
+      ),
     );
   }
 }
