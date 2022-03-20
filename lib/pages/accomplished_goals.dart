@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
 
-class CompletedPage extends StatefulWidget {
-  const CompletedPage({Key? key}) : super(key: key);
+class AccomplishedGoalsPage extends StatefulWidget {
+  const AccomplishedGoalsPage({Key? key}) : super(key: key);
 
   @override
-  _CompletedPageState createState() => _CompletedPageState();
+  _AccomplishedGoalsPageState createState() => _AccomplishedGoalsPageState();
 }
 
-class _CompletedPageState extends State<CompletedPage> {
+class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

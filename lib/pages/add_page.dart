@@ -10,6 +10,8 @@ class AddPage extends StatefulWidget {
 class _AddPageState extends State<AddPage> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(child: Scaffold());
+    return const SafeArea(
+      child: Scaffold(),
+    );
   }
 }

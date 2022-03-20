@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
 import 'package:goalist_app/pages/add_page.dart';
-import 'package:goalist_app/pages/completed_page.dart';
+import 'package:goalist_app/pages/accomplished_goals.dart';
 import 'package:goalist_app/pages/wishlist_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   static final List<Widget> _pagesOptions = <Widget>[
     const WishlistPage(),
     const AddPage(),
-    const CompletedPage(),
+    const AccomplishedGoalsPage(),
   ];
 
   static final List<String> _appBarText = <String>[
