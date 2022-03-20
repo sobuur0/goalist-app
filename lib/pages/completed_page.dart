@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
 
@@ -26,7 +25,7 @@ class _CompletedPageState extends State<CompletedPage> {
                 style: kGoalTextStyle,
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
