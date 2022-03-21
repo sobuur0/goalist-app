@@ -37,7 +37,7 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                           style: kDurationTextStyle.copyWith(fontSize: 18.0),
                         ),
                         const Text(
-                          'YOU did it',
+                          'YOU did it 🥰😋',
                           style: kDurationTextStyle,
                         ),
                       ],
@@ -69,7 +69,7 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                           style: kDurationTextStyle.copyWith(fontSize: 18.0),
                         ),
                         const Text(
-                          'YOU did it',
+                          'YOU did it 🥰😋',
                           style: kDurationTextStyle,
                         ),
                       ],
@@ -97,7 +97,7 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                           style: kDurationTextStyle.copyWith(fontSize: 18.0),
                         ),
                         const Text(
-                          'YOU did it',
+                          'YOU did it 🥰😋',
                           style: kDurationTextStyle,
                         ),
                       ],
