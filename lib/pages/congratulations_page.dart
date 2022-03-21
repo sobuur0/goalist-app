@@ -50,16 +50,19 @@ class _CongratulationsPageState extends State<CongratulationsPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const <Widget>[
               Icon(
-                Icons.man,
+                Icons.emoji_events,
                 size: 40.0,
+                color: Color(0xFFFFD782),
               ),
               Icon(
-                Icons.man,
+                Icons.military_tech,
                 size: 40.0,
+                color: Color(0xFFEBBC00),
               ),
               Icon(
-                Icons.man,
+                Icons.emoji_events,
                 size: 40.0,
+                color: Color(0xFFFFD782),
               ),
             ],
           ),
@@ -70,16 +73,19 @@ class _CongratulationsPageState extends State<CongratulationsPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const <Widget>[
               Icon(
-                Icons.man,
+                Icons.military_tech,
                 size: 40.0,
+                color: Color(0xFFF7B238),
               ),
               Icon(
-                Icons.man,
+                Icons.emoji_events,
                 size: 40.0,
+                color: Color(0xFFFFD782),
               ),
               Icon(
-                Icons.man,
+                Icons.military_tech,
                 size: 40.0,
+                color: Color(0xFFFFD782),
               ),
             ],
           ),

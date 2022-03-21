@@ -43,8 +43,9 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                       ],
                     ),
                     const Icon(
-                      Icons.woman,
+                      Icons.emoji_events,
                       size: 60.0,
+                      color: Color(0xFFF7B238),
                     ),
                   ],
                 ),
@@ -75,8 +76,9 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                       ],
                     ),
                     const Icon(
-                      Icons.house,
+                      Icons.military_tech,
                       size: 60.0,
+                      color: Color(0xFFFFD782),
                     ),
                   ],
                 ),
@@ -103,8 +105,9 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
                       ],
                     ),
                     const Icon(
-                      Icons.woman,
+                      Icons.emoji_events,
                       size: 60.0,
+                      color: Color(0xFFEBBC00),
                     ),
                   ],
                 ),
