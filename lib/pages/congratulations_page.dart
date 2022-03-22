@@ -60,7 +60,7 @@ class _CongratulationsPageState extends State<CongratulationsPage> {
                 color: Color(0xFFEBBC00),
               ),
               Icon(
-                Icons.emoji_events,
+                Icons.military_tech,
                 size: 40.0,
                 color: Color(0xFFFFD782),
               ),
