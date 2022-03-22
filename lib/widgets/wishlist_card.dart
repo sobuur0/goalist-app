@@ -4,11 +4,13 @@ import 'package:goalist_app/constants.dart';
 class WishlistCard extends StatelessWidget {
   final String goal;
   final int duration;
+  final VoidCallback? onTap;
 
   const WishlistCard({
     Key? key,
     required this.goal,
     required this.duration,
+    this.onTap,
   }) : super(key: key);
 
   @override
@@ -61,13 +63,18 @@ class WishlistCard extends StatelessWidget {
                 const Icon(
                   Icons.share,
                   color: kTextsColor,
+                  size: 30.0,
                 ),
                 const SizedBox(
                   width: 15.0,
                 ),
-                const Icon(
-                  Icons.check_circle,
-                  color: kUnselectedItemColor,
+                InkWell(
+                  onTap: onTap,
+                  child: const Icon(
+                    Icons.check_circle,
+                    color: kUnselectedItemColor,
+                    size: 30.0,
+                  ),
                 ),
               ],
             ),

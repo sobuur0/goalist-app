@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:goalist_app/constants.dart';
 
 class AddPage extends StatefulWidget {
   const AddPage({Key? key}) : super(key: key);
@@ -11,9 +10,8 @@ class AddPage extends StatefulWidget {
 class _AddPageState extends State<AddPage> {
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      'ADD PAGE',
-      style: kHeaderTextStyle
+    return const SafeArea(
+      child: Scaffold(),
     );
   }
 }

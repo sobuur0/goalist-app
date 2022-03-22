@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
 import 'package:goalist_app/pages/add_page.dart';
-import 'package:goalist_app/pages/completed_page.dart';
+import 'package:goalist_app/pages/accomplished_goals.dart';
 import 'package:goalist_app/pages/wishlist_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +17,13 @@ class _HomePageState extends State<HomePage> {
   static final List<Widget> _pagesOptions = <Widget>[
     const WishlistPage(),
     const AddPage(),
-    const CompletedPage(),
+    const AccomplishedGoalsPage(),
+  ];
+
+  static final List<String> _appBarText = <String>[
+    'My Wishlist',
+    'Add New Goal',
+    'Accomplished Goals',
   ];
 
   void onItemTapped(int index) {
@@ -30,8 +36,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'My Wishlist',
+        title: Text(
+          _appBarText.elementAt(_selectedIndex),
           style: kHeaderTextStyle,
         ),
         centerTitle: true,
