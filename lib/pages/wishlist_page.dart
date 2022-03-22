@@ -16,6 +16,8 @@ class _WishlistPageState extends State<WishlistPage> {
       child: ListView(
         children: <Widget>[
           WishlistCard(
+            goal: 'Become a Product designer',
+            duration: 3,
             onTap: () {
               Navigator.push(
                 context,
@@ -24,8 +26,6 @@ class _WishlistPageState extends State<WishlistPage> {
                 ),
               );
             },
-            goal: 'Become a Product designer',
-            duration: 3,
           ),
         ],
       ),

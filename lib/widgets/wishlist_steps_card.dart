@@ -7,12 +7,15 @@ class WishlistStepsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 40.0,
-        vertical: 20.0,
+        horizontal: 20.0,
+        vertical: 10.0,
       ),
       child: Container(
+        height: size.height * 0.6,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.0),
           color: kWishlistCardColor,
@@ -21,26 +24,41 @@ class WishlistStepsCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             //TODO: Change these to RichText
-            Text(
-              'Product Designer',
-              style: kHeaderTextStyle.copyWith(
-                fontSize: 25.0,
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 12.0,
+                top: 12.0,
+              ),
+              child: Text(
+                'Product Designer',
+                style: kHeaderTextStyle.copyWith(
+                  fontSize: 25.0,
+                ),
               ),
             ),
-            const Text(
-              'in 3 years',
-              style: kDurationTextStyle,
+            const Padding(
+              padding: EdgeInsets.only(left: 12.0),
+              child: Text(
+                'in 3 years',
+                style: kDurationTextStyle,
+              ),
             ),
+            const SizedBox(height: 10.0,),
             const Divider(
-              indent: 20.0,
-              endIndent: 20.0,
+              indent: 30.0,
+              endIndent: 30.0,
               thickness: 3.0,
               color: kTextsColor,
             ),
-            const Text(
-              'Steps to reach my goal:',
-              style: kDurationTextStyle,
+            const SizedBox(height: 10.0,),
+            const Padding(
+              padding: EdgeInsets.only(left: 12.0),
+              child: Text(
+                'Steps to reach my goal:',
+                style: kGoalTextStyle,
+              ),
             ),
+            const SizedBox(height: 5.0,),
             const GoalSteps(
               step: 'Make 3 cases for my portfolio',
             ),
@@ -53,11 +71,17 @@ class WishlistStepsCard extends StatelessWidget {
             const GoalSteps(
               step: 'Learn more about figma',
             ),
-            Spacer(),
-            Image.asset(
-              'images/car.jpg',
-              height: 100.0,
-              fit: BoxFit.fill,
+            const Spacer(),
+            ClipRRect(
+              borderRadius: const BorderRadius.only(
+                bottomLeft: Radius.circular(12.0),
+                bottomRight: Radius.circular(12.0),
+              ),
+              child: Image.asset(
+                'images/car.jpg',
+                height: 150.0,
+                fit: BoxFit.fill,
+              ),
             ),
           ],
         ),
