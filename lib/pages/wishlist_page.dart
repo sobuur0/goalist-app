@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:goalist_app/pages/congratulations_page.dart';
 import 'package:goalist_app/widgets/wishlist_card.dart';
 
 class WishlistPage extends StatefulWidget {

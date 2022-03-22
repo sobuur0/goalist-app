@@ -23,34 +23,39 @@ class WishlistStepsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            //TODO: Change these to RichText
             Padding(
               padding: const EdgeInsets.only(
                 left: 12.0,
                 top: 12.0,
               ),
-              child: Text(
-                'Product Designer',
-                style: kHeaderTextStyle.copyWith(
-                  fontSize: 25.0,
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(
+                        text: 'Product Designer\n',
+                        style: kHeaderTextStyle.copyWith(
+                          fontSize: 25.0,
+                        )),
+                    const TextSpan(
+                      text: 'in 3 years',
+                      style: kDurationTextStyle,
+                    ),
+                  ],
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 12.0),
-              child: Text(
-                'in 3 years',
-                style: kDurationTextStyle,
-              ),
+            const SizedBox(
+              height: 10.0,
             ),
-            const SizedBox(height: 10.0,),
             const Divider(
               indent: 30.0,
               endIndent: 30.0,
               thickness: 3.0,
               color: kTextsColor,
             ),
-            const SizedBox(height: 10.0,),
+            const SizedBox(
+              height: 10.0,
+            ),
             const Padding(
               padding: EdgeInsets.only(left: 12.0),
               child: Text(
@@ -58,7 +63,9 @@ class WishlistStepsCard extends StatelessWidget {
                 style: kGoalTextStyle,
               ),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             const GoalSteps(
               step: 'Make 3 cases for my portfolio',
             ),
