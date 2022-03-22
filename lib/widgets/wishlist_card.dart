@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
+import 'package:goalist_app/pages/congratulations_page.dart';
 
 class WishlistCard extends StatelessWidget {
   final String goal;
   final int duration;
-  final VoidCallback? onTap;
 
   const WishlistCard({
     Key? key,
     required this.goal,
     required this.duration,
-    this.onTap,
   }) : super(key: key);
 
   @override
@@ -69,7 +68,14 @@ class WishlistCard extends StatelessWidget {
                   width: 15.0,
                 ),
                 InkWell(
-                  onTap: onTap,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CongratulationsPage(),
+                      ),
+                    );
+                  },
                   child: const Icon(
                     Icons.check_circle,
                     color: kUnselectedItemColor,

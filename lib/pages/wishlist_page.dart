@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:goalist_app/pages/congratulations_page.dart';
 import 'package:goalist_app/widgets/wishlist_card.dart';
 
 class WishlistPage extends StatefulWidget {
@@ -14,16 +13,8 @@ class _WishlistPageState extends State<WishlistPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: ListView(
-        children: <Widget>[
+        children: const <Widget>[
           WishlistCard(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const CongratulationsPage(),
-                ),
-              );
-            },
             goal: 'Become a Product designer',
             duration: 3,
           ),
