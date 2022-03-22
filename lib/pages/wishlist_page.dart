@@ -14,18 +14,10 @@ class _WishlistPageState extends State<WishlistPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: ListView(
-        children: <Widget>[
+        children: const <Widget>[
           WishlistCard(
             goal: 'Become a Product designer',
             duration: 3,
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const CongratulationsPage(),
-                ),
-              );
-            },
           ),
         ],
       ),
