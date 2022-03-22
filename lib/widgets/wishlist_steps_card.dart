@@ -32,10 +32,11 @@ class WishlistStepsCard extends StatelessWidget {
                 TextSpan(
                   children: [
                     TextSpan(
-                        text: 'Product Designer\n',
-                        style: kHeaderTextStyle.copyWith(
-                          fontSize: 25.0,
-                        )),
+                      text: 'Product Designer\n',
+                      style: kHeaderTextStyle.copyWith(
+                        fontSize: 25.0,
+                      ),
+                    ),
                     const TextSpan(
                       text: 'in 3 years',
                       style: kDurationTextStyle,
