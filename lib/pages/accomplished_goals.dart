@@ -119,5 +119,3 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
     );
   }
 }
-
-//TODO: get and change the icons to a trophy icon
