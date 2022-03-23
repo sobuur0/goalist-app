@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:goalist_app/constants.dart';
+import 'package:goalist_app/widgets/accomplished_goals_card.dart';
 
 class AccomplishedGoalsPage extends StatefulWidget {
   const AccomplishedGoalsPage({Key? key}) : super(key: key);
@@ -19,97 +20,40 @@ class _AccomplishedGoalsPageState extends State<AccomplishedGoalsPage> {
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const Text(
+            children: const <Widget>[
+              Text(
                 'Recent',
                 style: kGoalTextStyle,
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Plunk for 1 week',
-                          style: kDurationTextStyle.copyWith(fontSize: 18.0),
-                        ),
-                        const Text(
-                          'YOU did it 🥰😋',
-                          style: kDurationTextStyle,
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.emoji_events,
-                      size: 60.0,
-                      color: Color(0xFFF7B238),
-                    ),
-                  ],
+                padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                child: AccomplishedGoalsCard(
+                  goalTrophy: Icons.emoji_events,
+                  accomplishedGoal: 'Plunk for 1 week',
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 30.0,
               ),
-              const Text(
+              Text(
                 'Last Month',
                 style: kGoalTextStyle,
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Visiting 3 cities',
-                          style: kDurationTextStyle.copyWith(fontSize: 18.0),
-                        ),
-                        const Text(
-                          'YOU did it 🥰😋',
-                          style: kDurationTextStyle,
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.military_tech,
-                      size: 60.0,
-                      color: Color(0xFFFFD782),
-                    ),
-                  ],
+                padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 10.0),
+                child: AccomplishedGoalsCard(
+                  goalTrophy: Icons.military_tech,
+                  accomplishedGoal: 'Visiting 3 cities',
                 ),
               ),
-              const Divider(
+              Divider(
                 thickness: 2.0,
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Helping 2 people',
-                          style: kDurationTextStyle.copyWith(fontSize: 18.0),
-                        ),
-                        const Text(
-                          'YOU did it 🥰😋',
-                          style: kDurationTextStyle,
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.emoji_events,
-                      size: 60.0,
-                      color: Color(0xFFEBBC00),
-                    ),
-                  ],
+                padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+                child: AccomplishedGoalsCard(
+                  accomplishedGoal: 'Helping 2 people',
+                  goalTrophy: Icons.emoji_events,
                 ),
               ),
             ],
